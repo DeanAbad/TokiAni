@@ -1,0 +1,181 @@
+@font-face {
+    font-family: 'Roboto'; /* The font file was copied to src as the framework disallows usage of resources outside src */
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    padding: 50px 0;
+
+    h1 {
+        color: rgb(211, 76, 150);
+        font-size: 75px;
+        font-weight: 400;
+        text-align: center;
+		user-select: none;
+		transition: 0.4s;
+
+        strong {
+            color: #313131;
+        }
+
+		&:hover {
+			cursor: pointer;
+			transform: scale(1.05);
+		}
+
+		&:active {
+			cursor: pointer;
+			transform: scale(0.975);
+		}
+    }
+}
+
+.content-wrap {
+	display: flex;
+	flex-direction: row;
+
+	.lists {
+		display: flex 1 1 100%;
+		flex-direction: column;
+
+		hr {
+			width: 50%;
+			margin: 10px 0 10px 50px;
+			border: 2px solid rgba(0, 0, 0, 0.15);
+		}
+
+		aside {
+			flex: 1 1 250px;
+			max-width: 250px;
+			padding-right: 16px;
+	
+			nav {
+				padding: 0 16px;
+	
+				h3 {
+					color: #313131;
+					font-size: 24px;
+					margin-bottom: 16px;
+				}
+	
+				a {
+					display: block;
+					padding: 8px 16px;
+					text-align: left;
+	
+					color: rgb(255, 255, 255);
+					font-size: 16px;
+					margin-bottom: 16px;
+	
+					background-color: rgb(211, 76, 150);
+					border-radius: 10px;
+					text-decoration: none;
+	
+					transition: 0.4s;
+	
+					&:hover {
+						background-color: #313131;
+					}
+				}
+			}
+		}
+	}
+
+	main {
+		flex: 1 1 0%;
+		padding: 0px 16px;
+
+		.main-head {
+			display: flex;
+			justify-content: flex-end;
+
+			.search-box {
+				display: flex;
+				justify-content: flex-end;
+				flex: 1 1 0%;
+				
+				input {
+					appearance: none;
+					background: none;
+					outline: none;
+					border: none;
+
+					display: block;
+					width: 100%;
+					padding: 16px;
+					border: 2px solid rgba(135, 135, 135, 0.57);
+					border-radius: 10px;
+					background-color: #EEE;
+
+					transition: 0.4s;
+
+					::placeholder {
+						color: #888;
+					}
+
+					&:hover {
+						border: 2px solid rgba(211, 76, 150, 0.57);
+					}
+
+					&:focus, &:valid {
+						background-color: #313131;
+						color: #FFF;
+					}
+				}
+			}
+		}
+
+		.anime-list {
+			display: flex;
+			flex-wrap: wrap;
+			margin-top: 32px;
+			margin: 32px -8px 0px;
+
+			.anime-card {
+				flex: 1 1 33.333%;
+				max-width: 20%;
+				padding: 16px 8px;
+
+				a {
+					text-decoration: none;
+				}
+
+				figure {
+					display: block;
+					margin-bottom: 16px;
+
+					img {
+						display: block;
+						width: 100%;
+						height: 250px;
+						object-fit: cover;
+						border-radius: 16px;
+						box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
+
+						transition: 0.4s;
+					}
+				}
+
+				h3 {
+					color: #313131;
+				}
+
+				&:hover {
+					figure {
+						img {
+							box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
+							transform: scale(1.05);
+						}
+					}
+				}
+			}
+		}
+	}
+}
