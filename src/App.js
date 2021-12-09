@@ -11,13 +11,13 @@ function App() {
 	const [ search, SetSearch ] = useState("")
 
 	const GetTopAnime = async () => {
-		const temp = await fetch(`https:/api.jikan.moe/v3/top/anime/1/bypopularity`).then(res => res.json())
+		const temp = await fetch(`https://api.jikan.moe/v3/top/anime/1/bypopularity`).then(res => res.json())
 
 		SetTopAnime(temp.top.slice(0, 5))
 	}
 
 	const GetUpcomingAnime = async () => {
-		const temp = await fetch(`https:/api.jikan.moe/v3/top/anime/1/upcoming`).then(res => res.json())
+		const temp = await fetch(`https://api.jikan.moe/v3/top/anime/1/upcoming`).then(res => res.json())
 
 		SetUpcomingAnime(temp.top.slice(0, 5))
 	}
