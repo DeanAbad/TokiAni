@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/TokiAni/static/css/main.4a68cb0e.chunk.css",
-    "main.js": "/TokiAni/static/js/main.c4eae5d5.chunk.js",
-    "main.js.map": "/TokiAni/static/js/main.c4eae5d5.chunk.js.map",
+    "main.js": "/TokiAni/static/js/main.0cdc1026.chunk.js",
+    "main.js.map": "/TokiAni/static/js/main.0cdc1026.chunk.js.map",
     "runtime-main.js": "/TokiAni/static/js/runtime-main.9ffecb8b.js",
     "runtime-main.js.map": "/TokiAni/static/js/runtime-main.9ffecb8b.js.map",
     "static/js/2.25b9d730.chunk.js": "/TokiAni/static/js/2.25b9d730.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.9ffecb8b.js",
     "static/js/2.25b9d730.chunk.js",
     "static/css/main.4a68cb0e.chunk.css",
-    "static/js/main.c4eae5d5.chunk.js"
+    "static/js/main.0cdc1026.chunk.js"
   ]
 }
